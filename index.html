@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teleforce CRM Presentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .slide {
+      margin: 20px auto;
+      padding: 40px 20px;
+      max-width: 1200px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide-title {
+      color: #007bff;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .section-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .section-content ul li::before {
+      content: "•";
+      color: #007bff;
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+
+    .animated-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .animated-button:hover {
+      transform: scale(1.05);
+      background-color: #0056b3;
+    }
+
+    .animated-svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+      transition: transform 0.3s ease;
+    }
+
+    .animated-button:hover .animated-svg {
+      transform: rotate(15deg);
+    }
+
+    .flowchart {
+      border: 2px dashed #007bff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .footer h4 {
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Slide 1: Title -->
+  <section class="slide text-center">
+    <h1 class="slide-title">How to Use Teleforce CRM for Effective Lead Management</h1>
+    <p class="lead">A guide for telecallers to handle leads and calls efficiently</p>
+    <img src="company-logo.png" alt="Company Logo" style="max-width: 200px;">
+  </section>
+
+  <!-- Slide 2: Introduction -->
+  <section class="slide">
+    <h2 class="slide-title">Overview of Teleforce CRM</h2>
+    <p>Teleforce CRM helps manage incoming calls and direct leads effectively, ensuring seamless call disposition and automating lead status updates for a simplified workflow.</p>
+    <div class="section-content">
+      <ul>
+        <li>Simplified workflow</li>
+        <li>Single-click lead management</li>
+        <li>Automatic data syncing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Slide 3: User Login Process -->
+  <section class="slide">
+    <h2 class="slide-title">Logging into Teleforce CRM</h2>
+    <ol>
+      <li>Open the CRM application/website.</li>
+      <li>Enter your ID and password.</li>
+      <li>Access the dashboard.</li>
+    </ol>
+    <img src="mock-dashboard.png" alt="Mock Dashboard" class="img-fluid">
+  </section>
+
+  <!-- Slide 4: Handling Leads -->
+  <section class="slide">
+    <h2 class="slide-title">Handling Leads</h2>
+    <h5>1. Incoming Calls:</h5>
+    <ul>
+      <li>Dispositions:
+        <ul>
+          <li>Interested</li>
+          <li>Callback Needed</li>
+          <li>Not Interested</li>
+          <li>Call Not Picked</li>
+          <li>Busy</li>
+          <li>Switched Off</li>
+        </ul>
+      </li>
+      <li>Save customer contact if interested.</li>
+      <li>Convert into a lead by filling in:
+        <ul>
+          <li>Source of the lead (e.g., Social Media, Website).</li>
+          <li>Disposition based on customer interaction.</li>
+        </ul>
+      </li>
+    </ul>
+    <h5>2. Direct Leads:</h5>
+    <ul>
+      <li>Dispositions:
+        <ul>
+          <li>New Lead</li>
+          <li>Qualified Lead</li>
+          <li>Sales Qualified Lead</li>
+          <li>Proposal Sent</li>
+          <li>Negotiation</li>
+          <li>Closed-Won</li>
+          <li>Closed-Lost</li>
+          <li>Disqualified</li>
+          <li>Follow-Up Needed</li>
+          <li>Pending</li>
+        </ul>
+      </li>
+      <li>Appears in the Leads Panel.</li>
+      <li>Make a call directly from the panel.</li>
+      <li>Disposition updates automatically.</li>
+    </ul>
+    <button class="animated-button">
+      <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 1a11 11 0 1 0 11 11A11 11 0 0 0 12 1zm3.5 13.5L10 12.5v-5h2v3.25l4 1.6z" />
+      </svg>
+      Start Lead Call
+    </button>
+  </section>
+
+  <!-- Slide 5: Call Disposition Workflow -->
+  <section class="slide">
+    <h2 class="slide-title">Call Disposition Workflow</h2>
+    <div class="flowchart">
+      <p>Incoming Call → Save Contact → Convert to Lead → Add Source and Disposition → Auto-update Lead Status</p>
+      <p>Direct Lead → Make Call → Update Call Disposition → Auto-update Lead Status</p>
+    </div>
+  </section>
+
+  <!-- Slide 6: Key Features -->
+  <section class="slide">
+    <h2 class="slide-title">What You Can Do with Teleforce CRM</h2>
+    <ul>
+      <li>Save contact details for incoming calls.</li>
+      <li>Convert leads seamlessly.</li>
+      <li>Call leads directly via the Leads Panel.</li>
+      <li>Update dispositions with automatic syncing.</li>
+    </ul>
+  </section>
+
+  <!-- Slide 7: Guidelines for Telecallers -->
+  <section class="slide">
+    <h2 class="slide-title">Guidelines for Telecallers</h2>
+    <ul>
+      <li>Save contact details for all interested customers.</li>
+      <li>Always update disposition immediately after calls.</li>
+      <li>Utilize the Leads Panel for direct call leads.</li>
+      <li>Ensure data accuracy during lead conversion.</li>
+    </ul>
+  </section>
+
+  <!-- Slide 8: Benefits -->
+  <section class="slide">
+    <h2 class="slide-title">Benefits of Using the Workflow</h2>
+    <ul>
+      <li>Eliminate redundant data entry.</li>
+      <li>Save time with automated updates.</li>
+      <li>Better tracking of leads and call outcomes.</li>
+      <li>Improved customer experience.</li>
+    </ul>
+  </section>
+
+  <!-- Slide 9: Summary -->
+  <section class="slide">
+    <h2 class="slide-title">Summary</h2>
+    <p>Log in → Handle incoming calls and direct leads → Update dispositions → Convert leads efficiently.</p>
+    <p>CRM automates updates, reducing workload and ensuring accurate tracking.</p>
+  </section>
+
+  <!-- Slide 10: Thank You -->
+  <section class="slide text-center">
+    <h2 class="slide-title">Ready to Get Started?</h2>
+    <p>Contact us for support or queries: <a href="mailto:abhaysingh@creatureindustry.com">abhaysingh@creatureindustry.com</a></p>
+    <button class="animated-button">
+      <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 17v-2h4v2h5v-6H5v6z" />
+      </svg>
+      Call Support
+    </button>
+    <h4>“Let’s make every lead count!”</h4>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
